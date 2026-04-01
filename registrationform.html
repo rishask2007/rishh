@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>Registration form</title>
+        <style>
+            .cont{
+            border:2px  black;
+            width:100%;
+            max-width:550px;
+          
+            padding:20px;
+            border-radius:35px;
+            margin:50px auto;  
+             background-image: linear-gradient(to left,rgb(101, 187, 216),rgb(202, 100, 117));
+               
+        }
+        .cont h1{
+            font-variant:small-caps;
+            font-style:normal;
+            text-align:center;
+        }
+         body{
+             
+              background-image:url("flower.jpg");
+        }
+        .row{
+            display:flex;
+            margin-bottom:10px;
+        }
+
+        .in{
+            display:flex;
+            flex-direction:column;
+            width:100%;
+            margin:0 10px;
+        }
+        .in label{
+            font-weight:600;
+            margin-bottom:5px;
+        }
+        .btn {
+           text-align: center;
+           margin-top: 15px;
+        }
+
+       button {
+          padding: 8px 20px;
+          cursor: pointer;
+        }
+          button:hover{
+            background-color:darkgoldenrod;
+            font-weight:800;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+            <form>
+                <h1>Registration Form</h1>
+                <div class="row">
+                    <div class="in">
+                        <label>Name</label>
+                        <input type="text" placeholder="type your name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="in">
+                        <label>Age</label>
+                        <input type="number">
+                    </div>
+                    <div class="in">
+                        <div>
+                        <label>Gender</label>
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                        </div>
+                    </div>
+                </div>
+                   <div class="row">
+                      <div class="in">
+                      <label>Email Id:</label>
+                      <input type="email" placeholder="Your Email Id" required>
+                   </div>
+                   <div class="in">
+                       <label>Mobile Number</label>
+                       <input type="number">
+                   </div>
+                </div>
+                <div class="row">
+                <div class="in">
+                    <label>Course:</label>
+                    <select>
+                        <option>CSE</option>
+                        <option>IT</option>
+                        <option>EEE</option>
+                        <option>ECE</option>
+                    </select>
+                </div>
+                <div class="in">
+                    <label>Languages:</label>
+                    <div>
+                        <input type="checkbox">Python
+                        <input type="checkbox">C
+                        <input type="checkbox">C++
+                        <input type="checkbox">Java
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                <div class="in">
+                    <textarea rows="5" cols="60" maxlength="200" placeholder="type your address"></textarea>
+                </div>
+                </div>
+                 <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
